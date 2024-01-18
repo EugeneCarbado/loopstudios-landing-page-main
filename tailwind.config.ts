@@ -18,6 +18,9 @@ const config: Config = {
         alata: ['var(--font-alata)'],
         josefinSans: ['var(--font-josefinSans)'],
       },
+      colors: {
+        textGrey: '#808080',
+      },
     },
   },
   plugins: [],
