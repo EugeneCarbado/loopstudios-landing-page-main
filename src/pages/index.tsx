@@ -34,7 +34,7 @@ export default function Home() {
           <a>Support</a>
         </div>
       </div>
-      <nav className="flex absolute top-0 width-full justify-between items-center px-6 pt-10">
+      <nav className="flex absolute top-0 w-full justify-between items-center px-6 pt-10">
         <Image src={LoopStudioLogo} alt="loopstuido logo" />
         <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
       </nav>
