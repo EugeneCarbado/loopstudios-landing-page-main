@@ -7,7 +7,9 @@ interface IHamburger {
 
 function Hamburger({setIsOpen, isOpen}: IHamburger): ReactElement {
   return (
-    <div onClick={() => setIsOpen(!isOpen)} className="flex flex-col z-30">
+    <div
+      onClick={() => setIsOpen(!isOpen)}
+      className={`flex flex-col z-30 ${isOpen}`}>
       <div
         className={`h-0.5 w-6 mb-[5px] bg-white origin-center transition-all ease-in-out duration-300 ${
           isOpen ? 'rotate-45' : ''

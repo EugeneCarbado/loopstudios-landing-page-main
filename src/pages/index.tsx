@@ -25,6 +25,7 @@ export default function Home() {
         } transition-all ease-in-out duration-300`}>
         <nav className="flex justify-between items-center px-6 pt-10">
           <Image src={LoopStudioLogo} alt="loopstuido logo" />
+          <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
         </nav>
         <div className="font-josefinSans text-2xl text-white uppercase flex flex-col pl-6 gap-6 mt-[159px]">
           <a>About</a>
@@ -36,7 +37,7 @@ export default function Home() {
       </div>
       <nav className="flex absolute top-0 w-full justify-between items-center px-6 pt-10">
         <Image src={LoopStudioLogo} alt="loopstuido logo" />
-        <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
+        {!isOpen ? <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} /> : ''}
       </nav>
       <div className="mx-6 absolute top-[227px] border-2">
         <h1 className="text-white p-6 font-josefinSans uppercase text-[40px] leading-[40px]">
